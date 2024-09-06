@@ -1,10 +1,15 @@
 # Graduation project: Analyze Panasonic's 72-hour warranty speed using Power BI and DAX tools---> Target: 90%
 
 Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2) 
+
 Adjust the column headers. 
+
 Format the columns. 
+
 Check the relationships. 
+
 Create additional relationships. 
+
 From the creation time column (Table rawdatafromtoolbriefv2), create additional columns for Date-Month-Year:
 
 ## Use DAX:
