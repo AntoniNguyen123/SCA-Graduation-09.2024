@@ -1,4 +1,4 @@
-# Graduation project: Analyze Panasonic's 72-hour warranty speed using Power BI and DAX tools.
+# Graduation project: Analyze Panasonic's 72-hour warranty speed using Power BI and DAX tools---> Target: 90%
 
 Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2)
 Adjust the column headers.
@@ -59,4 +59,8 @@ SWITCH(
     BLANK()  -- Default case if none of the conditions match
 )
 # Create a measure to calculate the fail cases due to other reasons (Reason Others):
-Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdata[Fail Reaso
+Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdata[Fail Reason])
+
+### Conclusion
+# Result of 72-hour warranty speed: 88.5% Vs Target: 90%
+# Reason of FAIL: Mainly beacause of spare part (60%) and other reasons (40%)
