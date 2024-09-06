@@ -8,7 +8,7 @@ Create additional relationships.
 From the creation time column (Table rawdatafromtoolbriefv2), create additional columns for Date-Month-Year:
 
 ## Use DAX:
-# Create a month column: 
+### Create a month column: 
 Month = MONTH(rawdata[Creation Date])
 # Create a year column: 
 Year = YEAR(rawdata[Creation Date])
