@@ -71,3 +71,4 @@ Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdat
 ## The warehouse department should plan to stock enough parts and part numbers.
 ## Prioritize key areas: HCM, Dong Nai, Binh Duong, Long An...
 ## Accelerate the distribution speed of parts to 24 hours for provinces around HCM, and 36 hours for other provinces.
+## Encourage service stations to stock spare parts.
