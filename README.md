@@ -20,11 +20,11 @@
 ## *III.Project implementation*
 
 - Download data excel from Salesforce.
-- 
+
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
 
 - Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2)
-- 
+
 ![Import data](https://github.com/user-attachments/assets/c42fb116-8e02-4d5a-bb34-aad74d4a5a21)
 
 - Check column headers and adjust them if needed.
@@ -33,13 +33,11 @@
 
 ![Show relationship](https://github.com/user-attachments/assets/18446141-45fa-4fbe-a5f7-adb9e6899ec5)
 
-Create additional relationships. 
+- Create additional relationships. 
 
 ![Add relationship](https://github.com/user-attachments/assets/b0d6c05a-1027-424a-b1ed-1c7532d0fc9d)
 
-From the creation time column (Table rawdatafromtoolbriefv2), create additional columns for Date-Month-Year:
-
-## Use DAX:
+## Use DAX: At Table rawdata, create column & measure to calculate.
 ### Create a month column: 
 Month = MONTH(rawdata[Creation Date])
 ### Create a year column: 
