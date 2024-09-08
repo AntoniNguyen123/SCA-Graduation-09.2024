@@ -4,11 +4,9 @@ Download data excel from Salesforce
 
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
 
-<img src="https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1).png" alt="Mô tả ảnh" width="500">
-
 Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2) 
 
-
+![Import data](https://github.com/user-attachments/assets/c42fb116-8e02-4d5a-bb34-aad74d4a5a21)
 
 Adjust the column headers. 
 
