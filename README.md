@@ -4,7 +4,7 @@
 - KPI target: Completed the job within 72H after creation, target 90%. Analyze the time of resolution, analyze which reason make prolong processing time → Find the reason and propose solution.
 - The tool for graduation project is Power BI.
 ## *II.Project details*
-'''sh
+```sh
 - Use the internal data source from Sales Force.
 - Calculate statistical parameters (subtract the completion date and time from the creation date and time)
 - Count number of job meet target.
@@ -16,7 +16,7 @@
 - Find the reason lead to Fail (if yes)
 - Conclusion.
 - Propose solution.
-'''
+```
   
 ## *III.Project implementation*
 Download data excel from Salesforce
