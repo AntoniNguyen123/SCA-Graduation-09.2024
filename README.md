@@ -19,15 +19,17 @@
   
 ## *III.Project implementation*
 
-- Download data excel from Salesforce
+- Download data excel from Salesforce.
+- 
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
-- Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2) 
+
+- Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2)
+- 
 ![Import data](https://github.com/user-attachments/assets/c42fb116-8e02-4d5a-bb34-aad74d4a5a21)
-- Adjust the column headers. 
 
-Format the columns. 
-
-Check the relationships. 
+- Check column headers and adjust them if needed.
+- Check the formatting of the columns and reformat if necessary. 
+- Check the relationships between tables. 
 
 ![Show relationship](https://github.com/user-attachments/assets/18446141-45fa-4fbe-a5f7-adb9e6899ec5)
 
