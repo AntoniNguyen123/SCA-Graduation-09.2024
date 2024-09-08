@@ -1,7 +1,7 @@
 # Graduation project: Analyze Panasonic's 72-hour warranty speed using Power BI and DAX tools---> Target: 90%
 
 Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2) 
-
+https://github.com
 Adjust the column headers. 
 
 Format the columns. 
