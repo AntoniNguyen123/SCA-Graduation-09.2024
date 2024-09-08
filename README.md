@@ -44,41 +44,42 @@ Month = MONTH(rawdata[Creation Date])
 Year = YEAR(rawdata[Creation Date])
 #### Create a column: 
 TAT_hour = WC - creation time.
-### Create a classification column: TAT_hour > 72 then 72H-FAIL, TAT_hour <= 72 then 72H-OK.
+#### Create a classification column: TAT_hour > 72 then 72H-FAIL, TAT_hour <= 72 then 72H-OK.
 TAT_Result = IF(rawdata[TAT_hour] > 72, "72H-FAIL", "72H-OK")
-### Create a new column named Part Use: 
+#### Create a new column named Part Use: 
 Part Use = IF(ISBLANK(rawdata[Part Change]), BLANK(), IF(SEARCH("PSV-SO", rawdata[NSC Order Number], 1, 0) > 0, "order", "avlb"))
 
-## Create the following Measures:
-### Measure to calculate the total 72h-ok cases (72h-ok):
+### Create the following Measures:
+#### Measure to calculate the total 72h-ok cases (72h-ok):
 72h-ok = COUNTAX(FILTER(rawdata, rawdata[TAT_Result] = "72H-OK"), rawdata[TAT_Result])
-### Measure to calculate the total 72h-fail cases (72h-fail):
+#### Measure to calculate the total 72h-fail cases (72h-fail):
 72h-fail = COUNTAX(FILTER(rawdata, rawdata[TAT_Result] = "72H-FAIL"), rawdata[TAT_Result])
-### Measure to calculate the total 72h cases (72h total = 72h-ok + 72h-fail):
+#### Measure to calculate the total 72h cases (72h total = 72h-ok + 72h-fail):
 72h total = [72h-ok] + [72h-fail]
-### Measure to calculate the 72h-ok ratio:
+#### Measure to calculate the 72h-ok ratio:
 72h-ok Ratio = DIVIDE([72h-ok], [72h-ok] + [72h-fail], 0)
-### Measure to calculate the cases with parts ordered (Part Order):
+#### Measure to calculate the cases with parts ordered (Part Order):
 Part Order = COUNTAX(FILTER(rawdata, rawdata[Part Use] = "order"), rawdata[Part Use])
-### Measure to calculate the cases with parts available (Part Avlb):
+#### Measure to calculate the cases with parts available (Part Avlb):
 Part Avlb = COUNTAX(FILTER(rawdata, rawdata[Part Use] = "avlb"), rawdata[Part Use])
-### Measure to calculate the total cases using parts (Part Use Total = Part Order + Part Avlb):
+#### Measure to calculate the total cases using parts (Part Use Total = Part Order + Part Avlb):
 Part Use Total = [Part Order] + [Part Avlb]
-### Measure to calculate the parts availability ratio (Part Avlb Ratio):
+#### Measure to calculate the parts availability ratio (Part Avlb Ratio):
 Part Avlb Ratio = DIVIDE([Part Avlb], [Part Use Total], 0)
-### Measure to calculate the ratio of cases with parts used (Part Use Ratio):
+#### Measure to calculate the ratio of cases with parts used (Part Use Ratio):
 Part Use Ratio = DIVIDE([Part Use Total], [72H Total], 0)
-### Measure to calculate the cases with parts ordered (Part Order):
+#### Measure to calculate the cases with parts ordered (Part Order):
 Part Order = COUNTAX(FILTER(rawdata, rawdata[Part Use] = "order"), rawdata[Part Use])
-### Measure to calculate the cases with parts available (Part Avlb):
+#### Measure to calculate the cases with parts available (Part Avlb):
 Part Avlb = COUNTAX(FILTER(rawdata, rawdata[Part Use] = "avlb"), rawdata[Part Use])
-### Measure to calculate the total cases using parts (Part Use Total = Part Order + Part Avlb):
+#### Measure to calculate the total cases using parts (Part Use Total = Part Order + Part Avlb):
 Part Use Total = [Part Order] + [Part Avlb]
-### Measure to calculate the parts availability ratio:
+#### Measure to calculate the parts availability ratio:
 Part Avlb Ratio = DIVIDE([Part Avlb], [Part Use Total], 0)
-### Measure to calculate the ratio of cases with parts used:
+#### Measure to calculate the ratio of cases with parts used:
 Part Use Ratio = DIVIDE([Part Use Total], [72H Total], 0)
-## Create a column to categorize the Fail Reason:
+
+#### Create a column to categorize the Fail Reason:
 Fail Reason = 
 SWITCH(
     TRUE(),
@@ -88,17 +89,17 @@ SWITCH(
     rawdata[TAT_Result] = "72H-FAIL" && rawdata[Part Use] = "avlb", "Part",
     BLANK()  -- Default case if none of the conditions match
 )
-## Create a measure to calculate the fail cases due to other reasons (Reason Others):
+#### Create a measure to calculate the fail cases due to other reasons (Reason Others):
 Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdata[Fail Reason])
 
-# Conclusion
-## Result of 72-hour warranty speed: 88.5% Vs Target: 90%
-## Reason of FAIL: Mainly beacause of spare part (60%) and other reasons (40%)
-## HCM related to 47% of spare parts.
-## Take care especialy in: HCM, Dong Nai, Binh Duong, Long An, Tay Ninh, BR-VT...
+## Conclusion
+#### Result of 72-hour warranty speed: 88.5% Vs Target: 90%
+#### Reason of FAIL: Mainly beacause of spare part (60%) and other reasons (40%)
+#### HCM related to 47% of spare parts.
+#### Take care especialy in: HCM, Dong Nai, Binh Duong, Long An, Tay Ninh, BR-VT...
 
-# Solutions:
-## The warehouse department should plan to stock enough parts and part numbers.
-## Prioritize key areas: HCM, Dong Nai, Binh Duong, Long An...
-## Accelerate the distribution speed of parts to 24 hours for provinces around HCM, and 36 hours for other provinces.
-## Encourage service stations to stock spare parts.
+## Solutions:
+#### The warehouse department should plan to stock enough parts and part numbers.
+#### Prioritize key areas: HCM, Dong Nai, Binh Duong, Long An...
+#### Accelerate the distribution speed of parts to 24 hours for provinces around HCM, and 36 hours for other provinces.
+#### Encourage service stations to stock spare parts.
