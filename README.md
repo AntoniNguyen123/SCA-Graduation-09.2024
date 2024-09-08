@@ -92,6 +92,10 @@ SWITCH(
 #### Create a measure to calculate the fail cases due to other reasons (Reason Others):
 Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdata[Fail Reason])
 
+## Output 
+
+![image](https://github.com/user-attachments/assets/fcfced39-3711-4b8a-ae9e-5f66e732633e)
+
 ## Conclusion
 #### Result of 72-hour warranty speed: 88.5% Vs Target: 90%
 #### Reason of FAIL: Mainly beacause of spare part (60%) and other reasons (40%)
