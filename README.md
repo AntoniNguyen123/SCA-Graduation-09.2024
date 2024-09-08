@@ -105,6 +105,8 @@ Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdat
 #### Result of 72-hour warranty speed: 88.5% Vs Target: 90%
 #### Reason of FAIL: Mainly beacause of spare part (60%) and other reasons (40%)
 #### HCM related to 47% of spare parts.
+#### Spare part use ratio over the total number of jobs: 23.8%
+#### Available spare part ratio over the total number of spare part used: 29.7%
 #### Take care especialy in: HCM, Dong Nai, Binh Duong, Long An, Tay Ninh, BR-VT...
 
 ## Solutions:
