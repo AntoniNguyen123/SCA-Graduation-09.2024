@@ -4,6 +4,8 @@ Download data excel from Salesforce
 
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
 
+<img src="[URL_CUA_ANH](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)" alt="Mô tả ảnh" width="500" height="300">
+
 Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2) 
 
 
