@@ -48,7 +48,7 @@ Month = MONTH(rawdata[Creation Date])
 #### Create a year column: 
 Year = YEAR(rawdata[Creation Date])
 #### Create a column: 
-TAT_hour = WC - creation time.
+TAT_hour = ROUND((rawdata[Work Completed Time (1st)] - rawdata[Creation Time]) * 24, 2)
 #### Create a classification column: TAT_hour > 72 then 72H-FAIL, TAT_hour <= 72 then 72H-OK.
 TAT_Result = IF(rawdata[TAT_hour] > 72, "72H-FAIL", "72H-OK")
 #### Create a new column named Part Use: 
