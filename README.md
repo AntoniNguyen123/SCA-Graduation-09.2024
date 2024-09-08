@@ -23,6 +23,8 @@
 
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
 
+![image](https://github.com/user-attachments/assets/8e12ee6d-ee94-46a0-b790-9b026a16930e)
+
 - Import the Excel file.(pic,provinceofasc,rawdatafromtoolbriefv2)
 
 ![Import data](https://github.com/user-attachments/assets/c42fb116-8e02-4d5a-bb34-aad74d4a5a21)
