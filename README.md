@@ -14,7 +14,11 @@ Format the columns.
 
 Check the relationships. 
 
+![Show relationship](https://github.com/user-attachments/assets/18446141-45fa-4fbe-a5f7-adb9e6899ec5)
+
 Create additional relationships. 
+
+![Add relationship](https://github.com/user-attachments/assets/b0d6c05a-1027-424a-b1ed-1c7532d0fc9d)
 
 From the creation time column (Table rawdatafromtoolbriefv2), create additional columns for Date-Month-Year:
 
