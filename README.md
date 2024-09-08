@@ -27,9 +27,14 @@
 
 ![Import data](https://github.com/user-attachments/assets/c42fb116-8e02-4d5a-bb34-aad74d4a5a21)
 
+- Clean data (Check for blank values, columns with incorrect formatting, incorrect dates, etc., fill in the missing information and correct the formatting...)
 - Check column headers and adjust them if needed.
 - Check the formatting of the columns and reformat if necessary. 
-- Check the relationships between tables. 
+- Check the relationships between tables.
+- 
+![Check data type(3)](https://github.com/user-attachments/assets/7de0126a-eac1-473e-866c-f6d94a683b91)
+
+![Check data type](https://github.com/user-attachments/assets/70d7ac0b-ab50-409e-b3f9-f8f62a26ad85)
 
 ![Show relationship](https://github.com/user-attachments/assets/18446141-45fa-4fbe-a5f7-adb9e6899ec5)
 
@@ -94,7 +99,7 @@ Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdat
 
 ## Output 
 
-![image](https://github.com/user-attachments/assets/fcfced39-3711-4b8a-ae9e-5f66e732633e)
+![image](https://github.com/user-attachments/assets/b281fe13-ce95-479a-bc1c-0babf045b0e1)
 
 ## Conclusion
 #### Result of 72-hour warranty speed: 88.5% Vs Target: 90%
