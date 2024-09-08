@@ -1,8 +1,8 @@
 # Graduation project: Analyze Panasonic's 72-hour warranty speed using Power BI and DAX tools---> Target: 90%
-Calculate the warranty speed of Panasonic Viet Nam in 3 months.
-Area: Southeast of Viet Nam.
-KPI target: Completed the job within 48H after creation, target 65%. Analyze the area achieve the target, the
-area not achieve the target → Find the reason and propose solution.
+- Calculate the warranty speed of Panasonic Viet Nam in 3 months in Southeast of Viet Nam.
+
+- KPI target: Completed the job within 72H after creation, target 90%. Analyze the time of resolution, analyze which reason make prolong processing time → Find the reason and propose solution.
+
 Download data excel from Salesforce
 
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
