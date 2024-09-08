@@ -5,17 +5,17 @@
 - The tool for graduation project is Power BI.
 ## II.Project details
 - Use the internal data source from Sales Force.
-- Use SQL, query…select column to analyze.
 - Calculate statistical parameters (subtract the completion date and time from the creation date and time)
 - Count number of job meet target.
 - Count number of job fail target.
 - Use power BI to visualize the graphic (Column, Bar chart, Pie, donut…)
-- Show number of job meet target 48H / total jobs. (Southeast of Viet Nam)
-- Show number of job meet target 48H / total jobs. (By location)
+- Show number of job meet target 72H / total jobs. (Southeast of Viet Nam)
+- Count number of job that use spare part.
+- Calculate ratio of job that use spare part. (Part available, part not available [must order])
 - Find the reason lead to Fail (if yes)
 - Conclusion.
 - Propose solution.
-- 
+
 Download data excel from Salesforce
 
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
