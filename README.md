@@ -3,6 +3,19 @@
 - Calculate the warranty speed of Panasonic Viet Nam in 3 months in Southeast of Viet Nam.
 - KPI target: Completed the job within 72H after creation, target 90%. Analyze the time of resolution, analyze which reason make prolong processing time → Find the reason and propose solution.
 - The tool for graduation project is Power BI.
+## II.Project details
+- Use the internal data source from Sales Force.
+- Use SQL, query…select column to analyze.
+- Calculate statistical parameters (subtract the completion date and time from the creation date and time)
+- Count number of job meet target.
+- Count number of job fail target.
+- Use power BI to visualize the graphic (Column, Bar chart, Pie, donut…)
+- Show number of job meet target 48H / total jobs. (Southeast of Viet Nam)
+- Show number of job meet target 48H / total jobs. (By location)
+- Find the reason lead to Fail (if yes)
+- Conclusion.
+- Propose solution.
+- 
 Download data excel from Salesforce
 
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
