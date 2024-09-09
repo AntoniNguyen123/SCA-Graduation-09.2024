@@ -45,8 +45,8 @@
 ![Add relationship](https://github.com/user-attachments/assets/b0d6c05a-1027-424a-b1ed-1c7532d0fc9d)
 
 ### Use DAX: At Table rawdata, create column & measure to calculate.
-#### Create a month column: 
-Month = MONTH(rawdata[Creation Date])
+- Create a month column: 
+  - Month = MONTH(rawdata[Creation Date])
 #### Create a year column: 
 Year = YEAR(rawdata[Creation Date])
 #### Create a column: 
