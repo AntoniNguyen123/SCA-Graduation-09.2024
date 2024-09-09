@@ -104,15 +104,15 @@ Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdat
 ![image](https://github.com/user-attachments/assets/b281fe13-ce95-479a-bc1c-0babf045b0e1)
 
 ## Conclusion
-#### Result of 72-hour warranty speed: 88.5% Vs Target: 90%
-#### Reason of FAIL: Mainly beacause of spare part (60%) and other reasons (40%)
-#### HCM related to 47% of spare parts.
-#### Spare part use ratio over the total number of jobs: 23.8%
-#### Available spare part ratio over the total number of spare part used: 29.7%
-#### Take care especialy in: HCM, Dong Nai, Binh Duong, Long An, Tay Ninh, BR-VT...
+- Result of 72-hour warranty speed: 88.5% Vs Target: 90%
+- Reason of FAIL: Mainly beacause of spare part (60%) and other reasons (40%)
+- HCM related to 47% of spare parts.
+- Spare part use ratio over the total number of jobs: 23.8%
+- Available spare part ratio over the total number of spare part used: 29.7%
+- Take care especialy in: HCM, Dong Nai, Binh Duong, Long An, Tay Ninh, BR-VT...
 
 ## Solutions:
-#### The warehouse department should plan to stock enough parts and part numbers.
-#### Prioritize key areas: HCM, Dong Nai, Binh Duong, Long An...
-#### Accelerate the distribution speed of parts to 24 hours for provinces around HCM, and 36 hours for other provinces.
-#### Encourage service stations to stock spare parts.
+- The warehouse department should plan to stock enough parts and part numbers.
+- Prioritize key areas: HCM, Dong Nai, Binh Duong, Long An...
+- Accelerate the distribution speed of parts to 24 hours for provinces around HCM, and 36 hours for other provinces.
+- Encourage service stations to stock spare parts.
