@@ -65,6 +65,9 @@
 ![Add relationship](https://github.com/user-attachments/assets/b0d6c05a-1027-424a-b1ed-1c7532d0fc9d)
 
 ### Use DAX: At Table rawdata, create column & measure to calculate.
+<details>
+  <summary>Click to see details</summary>
+   
 - Create a month column:
 ```dax
 Month = MONTH(rawdata[Creation Date])
@@ -85,6 +88,7 @@ TAT_Result = IF(rawdata[TAT_hour] > 72, "72H-FAIL", "72H-OK")
 ```dax
 Part Use = IF(ISBLANK(rawdata[Part Change]), BLANK(), IF(SEARCH("PSV-SO", rawdata[NSC Order Number], 1, 0) > 0, "order", "avlb"))
 ```
+</details>
 
 ### Create the following Measures:
 - Measure to calculate the total 72h-ok cases (72h-ok):
