@@ -135,7 +135,8 @@ SWITCH(
     rawdata[TAT_Result] = "72H-FAIL" && rawdata[Part Use] = "order", "Part",
     rawdata[TAT_Result] = "72H-FAIL" && rawdata[Part Use] = "avlb", "Part",
     BLANK()  -- Default case if none of the conditions match
-)```
+)
+```
 
 #### Create a measure to calculate the fail cases due to other reasons (Reason Others):
 
