@@ -45,18 +45,26 @@
 ![Add relationship](https://github.com/user-attachments/assets/b0d6c05a-1027-424a-b1ed-1c7532d0fc9d)
 
 ### Use DAX: At Table rawdata, create column & measure to calculate.
-- Create a month column:\
+- Create a month column:
 ```dax
 Month = MONTH(rawdata[Creation Date])
 ```
-- Create a year column:\
-```Year = YEAR(rawdata[Creation Date])```
-- Create a column:\
-```TAT_hour = ROUND((rawdata[Work Completed Time (1st)] - rawdata[Creation Time]) * 24, 2)```
-- Create a classification column: TAT_hour > 72 then 72H-FAIL, TAT_hour <= 72 then 72H-OK.\
-```TAT_Result = IF(rawdata[TAT_hour] > 72, "72H-FAIL", "72H-OK")```
-- Create a new column named Part Use:\
-```Part Use = IF(ISBLANK(rawdata[Part Change]), BLANK(), IF(SEARCH("PSV-SO", rawdata[NSC Order Number], 1, 0) > 0, "order", "avlb"))```
+- Create a year column:
+```dax
+Year = YEAR(rawdata[Creation Date])
+```
+- Create a column:
+```dax
+TAT_hour = ROUND((rawdata[Work Completed Time (1st)] - rawdata[Creation Time]) * 24, 2)
+```
+- Create a classification column: TAT_hour > 72 then 72H-FAIL, TAT_hour <= 72 then 72H-OK.
+```dax
+TAT_Result = IF(rawdata[TAT_hour] > 72, "72H-FAIL", "72H-OK")
+```
+- Create a new column named Part Use:
+```dax
+Part Use = IF(ISBLANK(rawdata[Part Change]), BLANK(), IF(SEARCH("PSV-SO", rawdata[NSC Order Number], 1, 0) > 0, "order", "avlb"))
+```
 
 ### Create the following Measures:
 - Measure to calculate the total 72h-ok cases (72h-ok):\
