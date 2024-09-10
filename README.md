@@ -46,9 +46,9 @@
 
 ### Use DAX: At Table rawdata, create column & measure to calculate.
 - Create a month column:
-```dax Month = MONTH(rawdata[Creation Date])```
+```Month = MONTH(rawdata[Creation Date])```
 - Create a year column: 
-  - Year = YEAR(rawdata[Creation Date])
+```Year = YEAR(rawdata[Creation Date])```
 - Create a column: 
   - TAT_hour = ROUND((rawdata[Work Completed Time (1st)] - rawdata[Creation Time]) * 24, 2)
 - Create a classification column: TAT_hour > 72 then 72H-FAIL, TAT_hour <= 72 then 72H-OK.
