@@ -91,6 +91,9 @@ Part Use = IF(ISBLANK(rawdata[Part Change]), BLANK(), IF(SEARCH("PSV-SO", rawdat
 </details>
 
 ### Create the following Measures:
+<details>
+  <summary>Click to see details</summary>
+   
 - Measure to calculate the total 72h-ok cases (72h-ok):
 ```dax
 72h-ok = COUNTAX(FILTER(rawdata, rawdata[TAT_Result] = "72H-OK"), rawdata[TAT_Result])
