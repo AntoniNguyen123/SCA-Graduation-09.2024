@@ -192,8 +192,7 @@ Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdat
 - Take care especialy in: HCM, Dong Nai, Binh Duong, Long An, Tay Ninh, BR-VT...
 </details>
 
-## *VI.Solutions*
-<details>
+## *VI.Solutions* <details>
   <summary>Click to see details</summary>
    
 - The warehouse department should plan to stock enough parts and part numbers.
