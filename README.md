@@ -53,7 +53,7 @@
 ```TAT_hour = ROUND((rawdata[Work Completed Time (1st)] - rawdata[Creation Time]) * 24, 2)```
 - Create a classification column: TAT_hour > 72 then 72H-FAIL, TAT_hour <= 72 then 72H-OK.\
 ```TAT_Result = IF(rawdata[TAT_hour] > 72, "72H-FAIL", "72H-OK")```
-- Create a new column named Part Use:\ 
+- Create a new column named Part Use:\
 ```Part Use = IF(ISBLANK(rawdata[Part Change]), BLANK(), IF(SEARCH("PSV-SO", rawdata[NSC Order Number], 1, 0) > 0, "order", "avlb"))```
 
 ### Create the following Measures:
