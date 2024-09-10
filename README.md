@@ -46,7 +46,9 @@
 
 ### Use DAX: At Table rawdata, create column & measure to calculate.
 - Create a month column:\
-```Month = MONTH(rawdata[Creation Date])```
+```dax
+Month = MONTH(rawdata[Creation Date])
+```
 - Create a year column:\
 ```Year = YEAR(rawdata[Creation Date])```
 - Create a column:\
