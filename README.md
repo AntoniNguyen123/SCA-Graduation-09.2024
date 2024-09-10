@@ -125,6 +125,7 @@ Part Use Ratio = DIVIDE([Part Use Total], [72H Total], 0)
 ```
 
 #### Create a column to categorize the Fail Reason:
+
 ```dax
 Fail Reason = 
 SWITCH(
@@ -137,6 +138,7 @@ SWITCH(
 )```
 
 #### Create a measure to calculate the fail cases due to other reasons (Reason Others):
+
 ```dax
 Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdata[Fail Reason])
 ```
