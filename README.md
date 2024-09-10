@@ -150,6 +150,7 @@ Part Avlb Ratio = DIVIDE([Part Avlb], [Part Use Total], 0)
 ```dax
 Part Use Ratio = DIVIDE([Part Use Total], [72H Total], 0)
 ```
+</details>
 
 #### Create a column to categorize the Fail Reason:
 
