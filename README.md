@@ -145,7 +145,7 @@ Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdat
 ```
 ## Output 
 
-![image](https://github.com/user-attachments/assets/b281fe13-ce95-479a-bc1c-0babf045b0e1)
+>![image](https://github.com/user-attachments/assets/b281fe13-ce95-479a-bc1c-0babf045b0e1)
 
 ## Conclusion
 - Result of 72-hour warranty speed: 88.5% Vs Target: 90%
