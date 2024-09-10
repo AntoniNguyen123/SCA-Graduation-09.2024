@@ -15,7 +15,7 @@
 - The tool for graduation project is Power BI.
 ## *II.Project details*
 <details>
-  <summary>I. Purpose of project</summary>
+  <summary>Click to see details</summary>
 
 - Use the internal data source from Sales Force.
 - Calculate statistical parameters (subtract the completion date and time from the creation date and time)
