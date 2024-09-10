@@ -33,7 +33,7 @@
 - Check column headers and adjust them if needed.
 - Check the formatting of the columns and reformat if necessary. 
 - Check the relationships between tables.
-- 
+
 ![Check data type(3)](https://github.com/user-attachments/assets/7de0126a-eac1-473e-866c-f6d94a683b91)
 
 ![Check data type](https://github.com/user-attachments/assets/70d7ac0b-ab50-409e-b3f9-f8f62a26ad85)
@@ -125,6 +125,7 @@ Part Use Ratio = DIVIDE([Part Use Total], [72H Total], 0)
 ```
 
 #### Create a column to categorize the Fail Reason:
+```dax
 Fail Reason = 
 SWITCH(
     TRUE(),
@@ -133,10 +134,12 @@ SWITCH(
     rawdata[TAT_Result] = "72H-FAIL" && rawdata[Part Use] = "order", "Part",
     rawdata[TAT_Result] = "72H-FAIL" && rawdata[Part Use] = "avlb", "Part",
     BLANK()  -- Default case if none of the conditions match
-)
-#### Create a measure to calculate the fail cases due to other reasons (Reason Others):
-Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdata[Fail Reason])
+)```
 
+#### Create a measure to calculate the fail cases due to other reasons (Reason Others):
+```dax
+Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdata[Fail Reason])
+```
 ## Output 
 
 ![image](https://github.com/user-attachments/assets/b281fe13-ce95-479a-bc1c-0babf045b0e1)
