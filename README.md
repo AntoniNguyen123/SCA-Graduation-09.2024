@@ -36,7 +36,9 @@
 </details>
 
 ## *III.Project implementation*
-
+<details>
+  <summary>Click to see details</summary>
+   
 - Download data excel from Salesforce.
 
 ![SF report](https://github.com/user-attachments/assets/81971f58-4d62-47d4-ba13-504ac92df2b1)
@@ -161,20 +163,33 @@ SWITCH(
 ```dax
 Reason Others = COUNTAX(FILTER(rawdata, rawdata[Fail Reason] = "Others"), rawdata[Fail Reason])
 ```
+</details>
+   
 ## *IV.Output*
+<details>
+  <summary>Click to see details</summary>
 
 ![image](https://github.com/user-attachments/assets/b281fe13-ce95-479a-bc1c-0babf045b0e1)
+</details>
 
 ## *V.Conclusion*
+<details>
+  <summary>Click to see details</summary>
+   
 - Result of 72-hour warranty speed: 88.5% Vs Target: 90%
 - Reason of FAIL: Mainly beacause of spare part (60%) and other reasons (40%)
 - HCM related to 47% of spare parts.
 - Spare part use ratio over the total number of jobs: 23.8%
 - Available spare part ratio over the total number of spare part used: 29.7%
 - Take care especialy in: HCM, Dong Nai, Binh Duong, Long An, Tay Ninh, BR-VT...
+</details>
 
 ## *VI.Solutions*
+<details>
+  <summary>Click to see details</summary>
+   
 - The warehouse department should plan to stock enough parts and part numbers.
 - Prioritize key areas: HCM, Dong Nai, Binh Duong, Long An...
 - Accelerate the distribution speed of parts to 24 hours for provinces around HCM, and 36 hours for other provinces.
 - Encourage service stations to stock spare parts.
+</details>
